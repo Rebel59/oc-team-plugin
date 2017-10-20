@@ -1,0 +1,12 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    thumb:
+        label: Photo
+        type: partial
+        path: $/rebel59/team/models/member/_thumb_column.htm
+        sortable: false
+    name:
+        label: rebel59.team::lang.models.member.name

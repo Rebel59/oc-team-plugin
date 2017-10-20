@@ -1,0 +1,50 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: rebel59.team::lang.models.member.name
+        span: left
+    cover:
+        label: rebel59.team::lang.models.member.cover
+        type: mediafinder
+        mode: image
+        span: right
+        imageWidth: 250
+        imageHeight: 250
+    function:
+        label: rebel59.team::lang.models.member.function
+        span: left
+    photo:
+        label: rebel59.team::lang.models.member.photo
+        type: mediafinder
+        mode: image
+        span: right
+        imageWidth: 250
+        imageHeight: 250
+    published:
+        label: rebel59.team::lang.models.member.published
+        span: left
+        type: switch
+    published_at:
+        label: rebel59.team::lang.models.member.published_at
+        span: left
+        type: datepicker
+        mode: datetime
+        trigger:
+            action: enable
+            field: published
+            condition: checked
+    description:
+        label: rebel59.team::lang.models.member.description
+        type: textarea
+        span: left
+    socials:
+        label: rebel59.team::lang.models.member.socials
+        type: repeater
+        prompt: Voeg nieuwe social toe
+        groups: $/rebel59/team/config/social_fields.yaml
+        span: right
+
+

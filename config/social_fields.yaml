@@ -1,0 +1,42 @@
+linkedin:
+    name: Linkedin
+    description: LinkedIn Social Media
+    icon: icon-linkedin
+    fields:
+        icon:
+            label: rebel59.team::lang.models.member.social.icon
+            default: linkedin-in
+            span: left
+        url:
+            label: rebel59.team::lang.models.member.social.url
+            type: text
+            span: right
+            placeholder: https://linkedin.com/...
+twitter:
+    name: Twitter
+    description: Twitter Social Media
+    icon: icon-twitter
+    fields:
+        icon:
+            label: rebel59.team::lang.models.member.social.icon
+            default: twitter
+            span: left
+        url:
+            label: rebel59.team::lang.models.member.social.url
+            type: text
+            span: right
+            placeholder: https://twitter.com/...
+email:
+    name: Email
+    description: Email Link
+    icon: icon-envelope-o
+    fields:
+        icon:
+            label: rebel59.team::lang.models.member.social.icon
+            default: envelope-o
+            span: left
+        url:
+            label: rebel59.team::lang.models.member.social.url
+            type: text
+            span: right
+            placeholder: username@domain.tld

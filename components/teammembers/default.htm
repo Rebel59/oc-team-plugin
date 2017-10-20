@@ -1,0 +1,77 @@
+<div class="container">
+    <div class=" row team-members">
+        {% for member in team %}
+        <div class="col-md-4">
+            <div class="card card-service">
+                <div class="card-header text-center" style="background-image: url({{member.cover | media}}">
+                    <h3>{{member.name}}</h3>
+                </div>
+                <div class="card-image">
+                    <img src="{{member.photo | media }}" class="mw-100 rounded-circle" alt="">
+
+                </div>
+                <div class="card-body">
+                    <h4>{{ member.function}}</h4>
+                    <p class="card-text">
+                        {{ member.description }}
+                    </p>
+                </div>
+            </div>
+            <div class="socials">
+                {% for social in member.socials %}
+                    <a href="{{social.url}}" target="_BLANK" class="btn btn-icon"><i class="fab fa-{{social.icon}}"></i></a>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+        {% for member in team %}
+        <div class="col-md-4">
+            <div class="card card-service">
+                <div class="card-header text-center" style="background-image: url({{member.cover | media}}">
+                    <h3>{{member.name}}</h3>
+                </div>
+                <div class="card-image">
+                    <img src="{{member.photo | media }}" class="mw-100 rounded-circle" alt="">
+
+                </div>
+                <div class="card-body">
+                    <h4>{{ member.function}}</h4>
+                    <p class="card-text">
+                        {{ member.description }}
+                    </p>
+                </div>
+            </div>
+            <div class="socials">
+                {% for social in member.socials %}
+                <a href="{{social.url}}" target="_BLANK" class="btn btn-icon"><i class="fab fa-{{social.icon}}"></i></a>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+        {% for member in team %}
+        <div class="col-md-4">
+            <div class="card card-service">
+                <div class="card-header text-center" style="background-image: url({{member.cover | media}}">
+                    <h3>{{member.name}}</h3>
+                </div>
+                <div class="card-image">
+                    <img src="{{member.photo | media }}" class="mw-100 rounded-circle" alt="">
+
+                </div>
+                <div class="card-body">
+                    <h4>{{ member.function}}</h4>
+                    <p class="card-text">
+                        {{ member.description }}
+                    </p>
+                </div>
+            </div>
+            <div class="socials">
+                {% for social in member.socials %}
+                <a href="{{social.url}}" target="_BLANK" class="btn btn-icon"><i class="fab fa-{{social.icon}}"></i></a>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
