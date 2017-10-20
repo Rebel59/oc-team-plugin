@@ -9,14 +9,20 @@ class TeamMembers extends ComponentBase
     public function componentDetails()
     {
         return [
-            'name'        => 'rebel59::la',
-            'description' => 'Shows all Team members'
+            'name'        => 'rebel59.team::lang.components.team_members.name',
+            'description' => 'rebel59.team::lang.components.team_members.description'
         ];
     }
 
     public function defineProperties()
     {
-        return [];
+        return [
+            'loadAssets' => [
+                'title' => 'rebel59.team::lang.components.team_members.load_assets.label',
+                'description' => 'rebel59.team::lang.components.team_members.load_assets.description',
+                'type' => 'checkbox'
+            ]
+        ];
     }
 
     public function onRun(){
@@ -25,7 +31,10 @@ class TeamMembers extends ComponentBase
     }
 
     protected function _loadAssets(){
-
+        if ($this->property('loadAssets'))
+        {
+            $this->addCss('assets/css/team.team_members.css');
+        }
     }
 
     protected function _prepareVars(){

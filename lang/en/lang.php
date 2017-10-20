@@ -2,7 +2,7 @@
 return [
     'plugin' => [
         'name' => 'Team',
-        'description' => ' '
+        'description' => 'List your team members.'
     ],
     'models' => [
         'member' => [
@@ -19,7 +19,16 @@ return [
                 'url' => 'Social URL'
             ]
         ]
+    ],
+    'components' => [
+        'team_members' => [
+            'name' => 'Team Members',
+            'description' => 'Lists Team Members on the Front-end',
+            'load_assets' => [
+                'label' => 'Load CSS Assets',
+                'description' => 'Load the bundled CSS File. This does not load Bootstrap files.',
+            ]
+        ]
     ]
 ];
 
-?>

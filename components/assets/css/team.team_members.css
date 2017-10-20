@@ -1,0 +1,45 @@
+
+.team-members .card-header {
+    padding-bottom: 75px;
+    background-size: cover;
+    background-position: center;
+}
+
+.team-members .card-header h3 {
+    margin: 15px 0;
+}
+
+.team-members .card-image {
+    position: relative;
+    text-align: center;
+}
+
+.team-members .card-image img {
+    margin-top: -75px;
+    height: 150px;
+}
+
+.team-members .card-body {
+    text-align: center;
+}
+
+.team-members .socials {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.team-members .socials a {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    line-height: 2.75rem;
+    background: #0066e6;
+    border-radius: 100%;
+    color: white;
+}
+
+.team-members .socials a:hover {
+    background: #004fb3;
+}
